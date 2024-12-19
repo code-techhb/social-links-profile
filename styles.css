@@ -1,0 +1,122 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  --p-font-size: 1.4rem;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(./assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--grey-900);
+  color: var(--white);
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* header */
+.header {
+  background-color: var(--green);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--grey-700);
+  width: 100%;
+  place-self: start;
+}
+
+/* card component */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+  padding: 3rem;
+  border-radius: 10px;
+  background-color: var(--grey-800);
+  max-width: 40rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+main img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--green);
+}
+
+main p {
+  font-size: var(--p-font-size);
+  color: #e0e0e0;
+  margin: 1.4rem 0 1.5rem 0;
+  font-style: italic;
+}
+
+/* links */
+.social-links {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.social-links a {
+  display: block;
+  background-color: var(--grey-700);
+  color: var(--white);
+  text-decoration: none;
+  padding: 1rem 0;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: var(--p-font-size);
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: var(--green);
+  color: var(--grey-700);
+}
+
+/* Footer */
+footer.attribution {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+footer.attribution a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+footer.attribution a:hover {
+  text-decoration: underline;
+}
